@@ -4,6 +4,9 @@ from .models import table_info,project_details
 # Create your views here.
 period=0
 
+def master_sheet(request):
+    return render(request, "master_sheet.html")
+
 def index(request):
     if request.method == "POST":
         Project_Fellowship_No =request.POST.get('Project_Fellowship_No')
